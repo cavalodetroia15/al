@@ -1,0 +1,91 @@
+body {
+    color: white;
+    background: black;
+    margin: 0px;
+    font-family: "Chakra Petch", sans-serif;
+    margin-bottom: 100px;
+}
+
+header {
+    /* Cor de borda e texto mais forte para o cabeçalho de rock */
+    border-bottom: solid 2px #ff0000; /* Vermelho vibrante */
+    padding: 20px;
+    font-size: 32px;
+    color: #ff0000; /* Vermelho vibrante */
+    text-align: center; /* Centraliza o texto "ROCKFLIX" */
+    text-transform: uppercase; /* Deixa o texto em maiúsculas */
+    letter-spacing: 2px; /* Espaçamento entre as letras */
+}
+
+.chamada {
+    /* Cores mais escuras e que remetem ao rock para a seção de destaque */
+    background: #222; /* Cinza escuro */
+    padding-bottom: 80px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    flex-wrap: wrap; /* Para se adaptar a telas menores */
+    gap: 40px; /* Espaçamento entre o texto e o vídeo */
+}
+
+.chamada-texto {
+    /* Ajuste na margem para centralizar melhor */
+    margin-right: 0;
+    text-align: right; /* Mantém o texto alinhado à direita */
+}
+
+h1 {
+    font-size: 40px;
+    color: #ffffff; /* Título em branco puro */
+}
+
+p {
+    font-size: 20px;
+    color: #aaaaaa; /* Um cinza mais claro para a hashtag */
+}
+
+/* Estilo para o iframe do vídeo na seção de chamada */
+.chamada iframe {
+    border: 3px solid #ffcc00; /* Borda amarela/dourada para o vídeo */
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5); /* Sombra amarelada */
+    max-width: 100%; /* Garante responsividade */
+    height: 315px; /* Altura padrão para vídeos do YouTube */
+}
+
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px; /* Aumentei um pouco o espaçamento */
+    padding-bottom: 10px; /* Para melhor visualização da scrollbar */
+}
+
+.categoria {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+}
+
+.categoria-videos img {
+    opacity: 0.7; /* Opacidade ligeiramente maior para as miniaturas */
+    height: 200px;
+    border: 2px solid #555; /* Borda cinza mais sutil */
+    border-radius: 5px; /* Leves cantos arredondados */
+    transition: opacity 0.3s ease, border 0.3s ease, transform 0.3s ease; /* Transição suave */
+}
+
+.categoria-videos img:hover {
+    opacity: 1.0;
+    border: 3px solid #ff0000; /* Borda vermelha vibrante ao passar o mouse */
+    transform: scale(1.03); /* Leve zoom ao passar o mouse */
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.7); /* Sombra vermelha ao passar o mouse */
+}
+
+.categoria h2 {
+    /* Cor e estilo para o título da categoria */
+    color: #ffcc00; /* Amarelo/dourado para o título da categoria */
+    border-bottom: solid 2px #ffcc00; /* Borda inferior amarela */
+    display: inline-block; /* Para que a borda se ajuste ao texto */
+    padding-bottom: 5px;
+    margin-bottom: 30px; /* Mais espaço abaixo do título */
+}
